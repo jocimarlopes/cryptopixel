@@ -1,7 +1,7 @@
 from PIL import Image
 from services.utils import select_image_in_folder
 
-END_MARKER = '1111111111111110'  # ENDING MARKER
+END_MARKER = '1111111111111110'  # ENDING MARKER TO INDICATE THE END OF DATA
 
 def text_to_binary(text):
     return ''.join(format(ord(c), '08b') for c in text)
